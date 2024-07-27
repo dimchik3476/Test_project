@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1257</width>
+    <height>835</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>430</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Отправить данные</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>161</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/img/images/png1.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>191</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Цвет зеленого масла</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Глубокий лишайниковый цвет</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Цвет лаврового венка</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Цвет четырехлистного клевера</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Тимьяновый цвет</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Цвет зеленого жука</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Цвет  темного леса</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Цвет зеленой крыши</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Глубокий цвети леса</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>10</y>
+      <width>1011</width>
+      <height>781</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1257</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

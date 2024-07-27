@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/png">
+        <file>C:/Users/litvi/Desktop/цвета/png1.png</file>
+        <file>C:/Users/litvi/Desktop/цвета/png2.png</file>
+        <file>C:/Users/litvi/Desktop/цвета/png3.png</file>
+        <file>C:/Users/litvi/Desktop/цвета/png4.png</file>
+        <file>C:/Users/litvi/Desktop/цвета/png5.png</file>
+        <file>C:/Users/litvi/Desktop/цвета/png6.png</file>
+        <file>C:/Users/litvi/Desktop/цвета/png7.png</file>
+        <file>C:/Users/litvi/Desktop/цвета/png8.png</file>
+        <file>C:/Users/litvi/Desktop/цвета/png9.png</file>
+    </qresource>
+</RCC>
