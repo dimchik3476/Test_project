@@ -6,7 +6,7 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    qDebug() << QHostAddress::LocalHost;
+    qDebug() << QHostAddress("0.0.0.0");
     MainWindow w;
     w.show();
     return a.exec();

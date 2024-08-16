@@ -30,14 +30,14 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>30</y>
+      <x>20</x>
+      <y>60</y>
       <width>161</width>
-      <height>131</height>
+      <height>51</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/img/images/png1.png);</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string/>
@@ -48,53 +48,23 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>191</width>
-      <height>28</height>
+      <width>211</width>
+      <height>41</height>
      </rect>
     </property>
     <item>
      <property name="text">
-      <string>Цвет зеленого масла</string>
+      <string>Enter the value of collor</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Глубокий лишайниковый цвет</string>
+      <string>Gray</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Цвет лаврового венка</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Цвет четырехлистного клевера</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Тимьяновый цвет</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Цвет зеленого жука</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Цвет  темного леса</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Цвет зеленой крыши</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>Глубокий цвети леса</string>
+      <string>Green</string>
      </property>
     </item>
    </widget>

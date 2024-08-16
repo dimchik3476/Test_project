@@ -14,17 +14,20 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="CollorPicture">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>110</y>
-      <width>67</width>
-      <height>17</height>
+      <x>260</x>
+      <y>40</y>
+      <width>432</width>
+      <height>432</height>
      </rect>
     </property>
     <property name="text">
      <string>TextLabel</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">

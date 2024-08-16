@@ -4,16 +4,17 @@
 MyUDP::MyUDP(QObject *parent) : QObject(parent)
 {
     socket = new QUdpSocket(this);
-    socket->bind(QHostAddress::LocalHost, 1111);
+    socket->bind(QHostAddress("0.0.0.0"), 55078);
     connect(socket, SIGNAL(readyRead()), this, SLOT(readyRead()));
 }
-void MyUDP::SendData()
+void MyUDP::SendData() //отправка данных на сервер
 {
-    QByteArray data = "Hello";
-    qDebug() << fromMatrix();
-    socket->writeDatagram(fromMatrix(), QHostAddress::LocalHost,  9999);
+    QByteArray data = "DEBUG";
+    qDebug() << matrix1.color;
+    qDebug() << matrix1.matrix;
+    socket->writeDatagram(data, QHostAddress("0.0.0.0"), 5353);
 }
-void MyUDP::readyRead()
+void MyUDP::readyRead() //чтение данных с клиента
 {
         QByteArray buffer;
         buffer.resize(socket->pendingDatagramSize());
@@ -28,33 +29,22 @@ void MyUDP::readyRead()
         qDebug() << "Message: " << buffer;
         std::cout << "succes";
 }
-QByteArray MyUDP::fromMatrix()
+QByteArray MyUDP::fromMatrix() //формирование матрицы цвета
 {
     QByteArray result;
     size_t size = 36;
     int start = 0, end = 256;
-    for (size_t i = 0; i != size; ++i) //need to correct 10 to 36
+    for (size_t i = 0; i != size; ++i)
     {
         for  (size_t j = 0; j != size; ++j)
         {
             int el = std::rand() % (start - end + 1) + start;
             QByteArray rel;
             rel = rel.setNum(el);
-            switch(rel.size())
-            {
-                case 1:
-                    result = result + "  " + rel;
-                    break;
-                case 2:
-                    result = result + ' ' + rel;
-                    break;
-                default:
-                    result += rel;
-                    break;
-            }
+            result += rel;
             result += ' ';
         }
-        result += "\n";
+        result += ":";
     }
     return result;
 }

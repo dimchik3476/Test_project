@@ -4,6 +4,7 @@
 #include <QObject>
 #include <QWidget>
 #include <QUdpSocket>
+#include <vector>
 
 class MyUDP : public QObject
 {
@@ -11,7 +12,12 @@ class MyUDP : public QObject
 public:
     explicit MyUDP(QObject *parent = 0);
     QByteArray fromMatrix();
-
+    QByteArray color1;
+    struct Matrix
+    {
+        QByteArray matrix;
+        QByteArray color;
+    } matrix1;
 signals:
 
 public slots:
@@ -24,5 +30,4 @@ private:
     QUdpSocket *socket;
 
 };
-
 #endif // MYUDP_H

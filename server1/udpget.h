@@ -3,7 +3,8 @@
 
 #include <QObject>
 #include <QUdpSocket>
-
+#include <QImage>
+#include <QVector>
 class UDPGet : public QObject
 {
     Q_OBJECT
@@ -14,6 +15,8 @@ signals:
 
 public slots:
     QByteArray ReadingData();
+    QImage ToPicture();
+    QVector<QVector<int>> GetMatrix();
 
 private:
     QUdpSocket *socket;
